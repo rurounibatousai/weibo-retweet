@@ -1,5 +1,21 @@
 let repostIndex = 0;
 
+// 先滚动到第一条微博的位置 获取要滚动到的 DOM 元素
+const targetElement = document.querySelector('div.wbpro-scroller-item');
+if (targetElement) {
+  // 获取目标元素相对于视口的位置信息
+  const boundingBox = targetElement.getBoundingClientRect();
+  
+  // 计算滚动的目标位置（这里假设你想要滚动到目标元素的下方）
+  const scrollTarget = boundingBox.top - 44 - 57
+  
+  // 使用 scrollTo 方法垂直滚动到目标位置
+  window.scrollTo({
+    top: scrollTarget,
+    behavior: 'smooth',
+  });
+}
+
 const auto = () => {
   // 找到具有 data-index 的 dom
   const container = document.querySelectorAll('[data-index]');
