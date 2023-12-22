@@ -6,7 +6,7 @@ import terser from '@rollup/plugin-terser';
 export default {
   input: 'auto.ts',
   output: {
-    file: 'bundle.js',
+    file: 'auto.js',
     format: 'cjs',
   },
   plugins: [
