@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015", // 或 "es6"
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": ["es2015", "dom"]
+  },
+  "include": [
+    "./**/*.ts"
+  ]
+}
